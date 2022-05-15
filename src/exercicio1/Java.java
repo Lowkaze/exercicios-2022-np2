@@ -1,9 +1,21 @@
 package exercicio1;
 
-// Aqui uma classe abstrata é herdada por outra classe
+// Conceito de classe abstrata sendo utilizado
 public class Java extends LinguagemDeProgramacao {
+    // Polimorfismo alterando o comportamento de um método
+    @Override
+    public void mostrarAnoDeCriacao() {
+        System.out.println(1995);
+    }
+
+    // Implementação de um método abstrato
     @Override
     public void mostrarSintaxe() {
         System.out.println("System.out.println(\"Olá, Mundo!\")");
+    }
+
+    public static void main(String[] args) {
+        (new Java()).mostrarAnoDeCriacao();
+        (new Java()).mostrarSintaxe();
     }
 }
