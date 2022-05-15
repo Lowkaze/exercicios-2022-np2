@@ -13,9 +13,4 @@ public class Java extends LinguagemDeProgramacao {
     public void mostrarSintaxe() {
         System.out.println("System.out.println(\"Olá, Mundo!\")");
     }
-
-    public static void main(String[] args) {
-        (new Java()).mostrarAnoDeCriacao();
-        (new Java()).mostrarSintaxe();
-    }
 }
